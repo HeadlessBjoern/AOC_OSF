@@ -27,7 +27,7 @@ EEG and ET files are cut by \'82doCutting.m\'91 using the \'82cutData\'91 functi
 \f0\b Feature Extraction\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f1\b0 \cf0 The behavioral files extract accuracy and reaction times. The eeg files extract alpha power over occipital electrodes. The gaze files extract gaze deviation. All files save structure arrays for each subject and each condition, which are combined in ,AOC_master_matrix_nback.m\'92 and ,AOC_master_matrix_sternberg.m\'92. Note, however, that the alpha power structure array is only created with \'82AOC_eeg_alpha_power_nback.m\'91 and  \'82AOC_eeg_alpha_power_sternberg.m\'91, respectively.\
+\f1\b0 \cf0 The behavioral files extract accuracy and reaction times. The eeg files extract alpha power over occipital electrodes. The gaze files extract gaze deviation and microsaccades. All files save structure arrays for each subject and each condition, which are combined in ,AOC_master_matrix_nback.m\'92 and ,AOC_master_matrix_sternberg.m\'92.\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -40,13 +40,13 @@ EEG and ET files are cut by \'82doCutting.m\'91 using the \'82cutData\'91 functi
 
 \f0\b \cf0 Gaze
 \f1\b0 \
-Visualizes gaze deviation as euclidean distances in boxplots.\
+Visualizes gaze deviation and microsaccades in boxplots.\
 \
 
 \f0\b Alpha Power\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f1\b0 \cf0 Calculates IAF and alpha power, saves the structure array and visualizes as boxplots, power spectra and topoplots.\
+\f1\b0 \cf0 Visualizes alpha power at IAF as boxplots, power spectra and topoplots.\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -58,4 +58,4 @@ R scripts for the GLMMs.\
 \f0\b Additional Files\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f1\b0 \cf0 Additional necessary files and functions: colorbrewer for colormaps, layANThead for the electrode layout of the ANT Neuro eeg cap, and shadedErrorBar for the power spectra plots. }
+\f1\b0 \cf0 Additional necessary files: colorbrewer for colormaps, layANThead for the electrode layout of the ANT Neuro eeg cap, and shadedErrorBar for the power spectra plots. Custom functions that are used in the scripts can be found in folder \'82functions\'91.}
